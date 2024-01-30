@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+@mixin adaptive-font ($pcWidth, $mobWidth) {
+    $addWidth: $pcWidth - $mobWidth;
+    $maxWidth: 1280 - 420;
+    font-size: calc(#{$mobWidth + px} + #{$addWidth} * ((100vw - 420px) / #{$maxWidth}));
+    color: red;
+}
+
+// очень мощный адаптив от SCSS см в Google consol
+// Это интерполяция SCSS
+// Применяется вместо @media
+
+
+
+
+
+
